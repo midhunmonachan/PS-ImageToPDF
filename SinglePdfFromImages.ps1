@@ -91,4 +91,5 @@ function SinglePdfFromImages {
 }
 
 # --- EXECUTION BLOCK ---
-SinglePdfFromImages -OutputFileName "combined_transcript.pdf"
+# This block is now intentionally empty to prevent automatic execution when the script is sourced remotely.
+# The user must explicitly call the function: SinglePdfFromImages -OutputFileName 'MyFile.pdf'

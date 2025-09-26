@@ -17,6 +17,26 @@
 
 ## 🛠️ Usage
 
+### Local Execution (Recommended)
+
 1.  **Navigate:** Open PowerShell and use `cd` to navigate to the directory containing your image files.
-2.  **Execute:** Run the script (e.g., `.\SinglePdfFromImages.ps1`).
+2.  **Execute:** Run the script:
+    ```powershell
+    .\SinglePdfFromImages.ps1
+    # or with a custom name:
+    .\SinglePdfFromImages.ps1 -OutputFileName "MyBook_Final.pdf"
+    ```
 3.  **Result:** A new PDF file will be created in the same directory.
+
+### Direct Execution from GitHub (Quick Run)
+
+You can run the script directly from the repository using a single command. **Note:** This bypasses the local Execution Policy, so only run scripts you fully trust.
+
+1.  **Navigate** to your target directory.
+2.  **Run** the following command:
+
+    ```powershell
+    iwr [https://raw.githubusercontent.com/midhunmonachan/PS-ImageToPDF/main/SinglePdfFromImages.ps1](https://raw.githubusercontent.com/midhunmonachan/PS-ImageToPDF/main/SinglePdfFromImages.ps1) | iex
+    ```
+
+***

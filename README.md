@@ -18,5 +18,5 @@
 ## 🛠️ Usage
 
 1.  **Navigate:** Open PowerShell and use `cd` to navigate to the directory containing your image files.
-2.  **Execute:** Run the script (e.g., `.\New-PdfFromImages.ps1`).
+2.  **Execute:** Run the script (e.g., `.\SinglePdfFromImages.ps1`).
 3.  **Result:** A new PDF file will be created in the same directory.

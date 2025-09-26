@@ -20,13 +20,18 @@
 ### Local Execution (Recommended)
 
 1.  **Navigate:** Open PowerShell and use `cd` to navigate to the directory containing your image files.
-2.  **Execute:** Run the script:
+2.  **Define Function:** Run the script file to load the function into your current session:
     ```powershell
     .\SinglePdfFromImages.ps1
-    # or with a custom name:
-    .\SinglePdfFromImages.ps1 -OutputFileName "MyBook_Final.pdf"
     ```
-3.  **Result:** A new PDF file will be created in the same directory.
+3.  **Execute Conversion:** Call the function directly in the same window:
+    ```powershell
+    # To use the default name (combined_document.pdf)
+    SinglePdfFromImages
+    
+    # To use a custom name
+    SinglePdfFromImages -OutputFileName "MyBook_Final.pdf"
+    ```
 
 ### Direct Execution from GitHub (Quick Run)
 

@@ -37,7 +37,7 @@ You can run the script directly from the repository using a single command. **No
 
     ```powershell
     # Use default output name (combined_transcript.pdf)
-    iwr https://raw.githubusercontent.com/midhunmonachan/PS-ImageToPDF/main/SinglePdfFromImages.ps1 | iex
+    iwr https://raw.githubusercontent.com/midhunmonachan/PS-ImageToPDF/main/SinglePdfFromImages.ps1 | iex; SinglePdfFromImages
 
     # Use a custom output name (e.g., Final.pdf)
     # This downloads the function, then calls it with the custom parameter

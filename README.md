@@ -33,10 +33,15 @@
 You can run the script directly from the repository using a single command. **Note:** This bypasses the local Execution Policy, so only run scripts you fully trust.
 
 1.  **Navigate** to your target directory.
-2.  **Run** the following command:
+2.  **Run** one of the following commands:
 
     ```powershell
-    iwr [https://raw.githubusercontent.com/midhunmonachan/PS-ImageToPDF/main/SinglePdfFromImages.ps1](https://raw.githubusercontent.com/midhunmonachan/PS-ImageToPDF/main/SinglePdfFromImages.ps1) | iex
+    # Use default output name (combined_transcript.pdf)
+    iwr https://raw.githubusercontent.com/midhunmonachan/PS-ImageToPDF/main/SinglePdfFromImages.ps1 | iex
+
+    # Use a custom output name (e.g., Final.pdf)
+    # This downloads the function, then calls it with the custom parameter
+    iwr https://raw.githubusercontent.com/midhunmonachan/PS-ImageToPDF/main/SinglePdfFromImages.ps1 | iex; SinglePdfFromImages -OutputFileName 'Final.pdf'
     ```
 
 ***
